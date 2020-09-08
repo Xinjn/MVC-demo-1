@@ -1,0 +1,14 @@
+/* 14px-19px的宽度为滚动条的宽度 把滚动条干掉*/
+body{
+    overflow: hidden;
+}
+/* 只管body里面的page，page里就不管了 */
+body > .page{
+    display: flex;
+    flex-wrap:wrap;
+}
+body > .page > section{
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid grey;
+}
